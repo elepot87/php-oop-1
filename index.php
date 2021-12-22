@@ -17,7 +17,7 @@ require_once __DIR__ . '/partials/movie.php'
 var_dump($JurassicPark);
 var_dump($KingsMan);
 ?>
-    ?>
+
 
 </body>
 
