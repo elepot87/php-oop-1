@@ -22,9 +22,9 @@ function __construct($year) {
 // Metodo
 public function setNews($year) {
 if($year > 2020) {
-   return $this -> news = "Novità";
+$this -> news = "Novità";
 } else {
-   return $this -> news = "Classico";
+  $this -> news = "Classico";
 }
 }
 
@@ -34,8 +34,9 @@ return $this -> news;
 
 }
 
+// Istanza 1
 
-$JurassicPark = new Movie(1993);
+$JurassicPark = new Movie(2022);
 $JurassicPark -> title = 'Jurassic Park';
 $JurassicPark -> setNews($year);
 $news_JurassicPark = $JurassicPark -> getNews();
