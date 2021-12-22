@@ -21,8 +21,8 @@ function __construct($year) {
 }
 
 // Metodo
-public function setNews($year) {
-if($year > 2020) {
+public function setNews() {
+if($this->year > 2020) {
     $this -> news = "Novità";
 } else {
     $this -> news = "Classico";
@@ -34,15 +34,23 @@ public function getNews() {
 }
 
 
-
 }
 
 // Istanza 1
-
-$JurassicPark = new Movie(2022);
+$JurassicPark = new Movie(1993);
 $JurassicPark -> title = 'Jurassic Park';
+$JurassicPark -> setNews();
 $news_JurassicPark = $JurassicPark -> getNews();
-$JurassicPark -> setNews($year);
 $JurassicPark -> description = 'Su Isla Nublar, una piccola isola di proprietà della InGen situata a 120 miglia a nord-ovest della Costa Rica, un operaio viene assalito e ucciso da una feroce creatura, custodita in una gabbia che la vittima stava spostando insieme ai colleghi. La famiglia dell\'uomo fa causa al proprietario della InGen, John Hammond, un simpatico ed eccentrico miliardario con la passione per i dinosauri.';
 $JurassicPark -> genre = 'Azione';
+
+
+// Istanza 2
+$KingsMan = new Movie(2022);
+$KingsMan-> title = 'The King\'s Man - Le Origini';
+$KingsMan -> setNews();
+$news_KingsMan= $KingsMan-> getNews();
+$KingsMan -> description = 'Le radici della società segreta affondano nella Gran Bretagna della Prima guerra mondiale ed è in questo periodo che nella terra inglese nasce una generazione di guerrieri d\'élite. Segue una raccolta dei peggiori tiranni e menti criminali della storia, riuniti tutti insieme per uno scopo comune: organizzare una guerra che spazzi via milioni di vite umane.';
+$KingsMan-> genre = 'Avventura';
+
 ?>
